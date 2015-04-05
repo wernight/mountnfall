@@ -1,0 +1,9 @@
+[-] Sortir le curseur de l'écran puis le re-rentrer alors qu'on
+	avait un curseur spécial (genre Depile) supprime le curseur.
+[+] EndGame: Add "pts" after score or a caption "Score" to signal what it is.
+[+] Animated characters in towers
+[+] Input human players' names.
+[+] A black crow flies through the screen at random
+	or when players don't move.
+[-] Someone told me that once a friend told him that
+	he saw a strange bug.

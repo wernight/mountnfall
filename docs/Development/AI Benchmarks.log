@@ -1,0 +1,409 @@
+0: isGameOver
+1: evaluate
+2: getAllPossibleMoves
+3: clone
+4: execute
+
+Bench 0: 11792 times = 0.0407055630936228
+Bench 1: 134 times = 0.0
+Bench 2: 11658 times = 0.28907188196946304
+Bench 3: 134 times = 60.223880597014926			<-- logic.execute(...)
+Bench 4: 11792 times = 0.08734735413839892
+
+Bench 0: 11792 times = 0.06529850746268656
+Bench 1: 134 times = 0.0
+Bench 2: 134 times = 0.0
+Bench 3: 11792 times = 0.07208276797829037
+Bench 4: 11658 times = 0.2787785211871676
+
+***********************************************************************
+
+2: isGameOver
+3: evaluate
+1: getAllPossibleMoves
+0: clone
+4: execute
+5: execute (without getAllPossibleMoves)
+
+Bench 0: 50
+Bench 1: 0
+Bench 2: 0
+Bench 3: 60
+Bench 4: 9560	<-- Execute
+Bench 5: 160	<-- Execute
+
+Bench 0: 0
+Bench 1: 0
+Bench 2: 0
+Bench 3: 60
+Bench 4: 7190	<-- Execute
+Bench 5: 110	<-- Execute
+
+***********************************************************************
+
+Times 0: 0
+Times 1: 0
+Times 2: 60
+Times 3: 0
+Times 4: 6140
+Sub times 0: 0
+Sub times 1: 60
+Sub times 2: 0
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+Times 0: 0
+Times 1: 0
+Times 2: 0
+Times 3: 0
+Times 4: 3020
+Sub times 0: 110
+Sub times 1: 0
+Sub times 2: 0
+Player moved: GameCommand -> Move -> PileUpMove from H4 to G3.
+Player moved: GameCommand -> Move -> PileUpMove from A4 to C6.
+Times 0: 0
+Times 1: 110
+Times 2: 0
+Times 3: 0
+Times 4: 1420
+Sub times 0: 0
+Sub times 1: 50
+Sub times 2: 0
+
+Times 0: 68.75743823498487			<- isGameOver
+Times 1: 0.0						
+Times 2: 5.47612264379859			<- clone
+Times 3: 2.8537186086177826			<- getAllPossibleMoves
+Times 4: 0.0
+Sub times 0: 1776.8500980697572		<- execute
+Sub times 1: 374.4363800212741		<- minMax(0)
+Sub times 2: 208.42370829731226		<- clone
+
+***********************************************************************
+
+Times 0: 65.99339580256492			<- isGameOver
+Times 1: 213.38104896235745			<- evaluate
+Times 2: 0.0
+Times 3: 3.2283477766322903			<- getAllPossibleMoves
+Times 4: 0.0
+Sub times 0: 1743.2943897827645		<- execute
+Sub times 1: 534.3560904462938		<- minMax(0)
+Sub times 2: 194.72502053360222		<- clone
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+Times 0: 37.93895304913167			<- isGameOver
+Times 1: 107.0022963838419			<- evaluate
+Times 2: 0.0
+Times 3: 2.2402319854008965			<- getAllPossibleMoves
+Times 4: 0.0
+Sub times 0: 761.3335791758727		<- execute
+Sub times 1: 262.7248193877749		<- minMax(0)
+Sub times 2: 96.90239528130041		<- clone
+
+***********************************************************************
+Changed instanceof into .getClass() == .class
+***********************************************************************
+
+Times 0: 69.88635411247378
+Times 1: 229.4481972574722
+Times 2: 0.0
+Times 3: 3.1814143714145757
+Times 4: 0.0
+Sub times 0: 1743.891114497732
+Sub times 1: 542.7387317911489
+Sub times 2: 207.00900115788681
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+Times 0: 32.1326203927747
+Times 1: 103.74210094113369
+Times 2: 0.0
+Times 3: 2.696156489138957
+Times 4: 0.0
+Sub times 0: 790.184213612054
+Sub times 1: 248.75877906515962
+Sub times 2: 107.33250641165068
+
+***********************************************************************
+Moved the findAllPossibleMoves into the getAllPossibleMoves
+and used a canPlayerMove() in the execute.
+***********************************************************************
+
+Times 0: 65.54333797842264
+Times 1: 246.90407146909274
+Times 2: 0.0
+Times 3: 36.162188437301666				<------ +33
+Times 4: 0.0
+Sub times 0: 404.0119680073112			<------ -1339
+Sub times 1: 533.6328131551854			<------ -9     minMax(0)
+Sub times 2: 184.63936706795357
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 42.08250221563503
+Times 1: 125.28118138038553
+Times 2: 0.0
+Times 3: 10.941350006498396			<---- +8
+Times 4: 0.0
+Sub times 0: 169.4983154273359		<---- -620
+Sub times 1: 273.1071590225911
+Sub times 2: 95.3837643925799
+
+***********************************************************************
+in findAllPossibleMoves:
+	was:	List list = new ArrayList();
+	now:	ArrayList list = new ArrayList(150);
+***********************************************************************
+
+Times 0: 65.55004274006933
+Times 1: 230.82351362891495				<---- -15
+Times 2: 0.0
+Times 3: 33.50626058038324				<---- -3
+Times 4: 0.0
+Sub times 0: 417.52627431065775			<---- +13
+Sub times 1: 524.1732178025413
+Sub times 2: 200.47603882174008
+TOTAL: 1406.1390569738578
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 39.43495534057729				<---- -3
+Times 1: 118.23781825485639				<---- -7
+Times 2: 0.0
+Times 3: 11.653732045320794				<---- +1
+Times 4: 0.0
+Sub times 0: 165.96741479914635
+Sub times 1: 271.63462344626896
+Sub times 2: 106.85227711126208
+TOTAL: 676.8785933386534
+
+***********************************************************************
+Minor changes in the execute
+***********************************************************************
+
+Times 0: 76.31120201619342
+Times 1: 239.1215072539635
+Times 2: 0.0
+Times 3: 37.752057526726276
+Times 4: 0.0
+Sub times 0: 438.0403627217747
+Sub times 1: 553.6147102578543
+Sub times 2: 196.8847952359356
+TOTAL: 1469.256943629589
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 35.269615650177
+Times 1: 111.79285605205223
+Times 2: 0.0
+Times 3: 17.015873545315117
+Times 4: 0.0
+Sub times 0: 164.1613168157637
+Sub times 1: 271.39325162023306
+Sub times 2: 101.49935463955626
+TOTAL: 680.4849226437509
+
+***********************************************************************
+A litte bit fast canPlayerMove and other small possible improvements.
+***********************************************************************
+
+Times 0: 73.8497125171125
+Times 1: 266.51720611099154
+Times 2: 0.0
+Times 3: 38.109924741089344
+Times 4: 0.0
+Sub times 0: 355.99825683422387			-----> -83
+Sub times 1: 570.3582025039941
+Sub times 2: 197.4178246324882
+TOTAL: 1387.9138101544231				-----> -81
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 35.40287298709154
+Times 1: 120.58281227294356
+Times 2: 0.0
+Times 3: 13.638344585895538
+Times 4: 0.0
+Sub times 0: 128.07874753233045			-----> -36
+Sub times 1: 266.2389580924064
+Sub times 2: 89.18436446785927
+TOTAL: 617.4039122350514				-----> -63
+
+***********************************************************************
+Used CounterSquares in Board but didn't movified algo to use them.
+***********************************************************************
+
+Times 0: 69.22174359671772
+Times 1: 248.49058820772916
+Times 2: 0.0
+Times 3: 48.40761661995202
+Times 4: 0.0
+Sub times 0: 436.2619219562039
+Sub times 1: 549.1468177773058
+Sub times 2: 204.91711227223277
+TOTAL: 1495.8162221955135				-----> +100
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 36.35076014418155
+Times 1: 99.57592314295471
+Times 2: 0.0
+Times 3: 9.343099953606725
+Times 4: 0.0
+Sub times 0: 156.68549586553127
+Sub times 1: 245.35024049133062
+Sub times 2: 97.33485308103263
+TOTAL: 631.3456477643922				----> +13
+
+***********************************************************************
+A slight little use of the new CounterSquares in canPlayerMove
+and count get & set or board.
+***********************************************************************
+
+Times 0: 66.18448180845007
+Times 1: 260.14851070928853
+Times 2: 0.0
+Times 3: 32.54496387823019
+Times 4: 0.0
+Sub times 0: 402.6148611273384
+Sub times 1: 556.8304865935352
+Sub times 2: 216.11491979914717
+TOTAL: 1450.1265525737545
+900449 gets pour 31759 sets. (= 3% de sets, soit 30 gets pour 1 set)
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 34.44241438189056
+Times 1: 135.07433916360606
+Times 2: 0.0
+Times 3: 11.322683919919655
+Times 4: 0.0
+Sub times 0: 140.87312894687057
+Sub times 1: 276.8852981092641
+Sub times 2: 96.29309910780285
+TOTAL: 657.815250004176
+1419739 gets pour 47055 sets. (= 3% de sets, soit 30 gets pour 1 set)
+
+***********************************************************************
+
+***********************************************************************
+
+Times 0: 69.9316113339737
+Times 1: 245.60418379865587
+Times 2: 0.0
+Times 3: 40.3518329160288
+Times 4: 0.0
+Sub times 0: 403.0364236738533
+Sub times 1: 545.4332120530307
+Sub times 2: 196.26544192014262
+TOTAL: 1433.3922794549726				-----> -22
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 33.62275598477572
+Times 1: 104.39414002932608
+Times 2: 0.0
+Times 3: 15.59865233907476
+Times 4: 0.0
+Sub times 0: 161.70820831181481
+Sub times 1: 244.79961111629382
+Sub times 2: 89.8883655462414
+TOTAL: 628.8137581925839				-----> -30
+
+
+***********************************************************************
+A list of white & black counter.
+***********************************************************************
+
+Times 0: 75.45885782549158
+Times 1: 251.07611590763554
+Times 2: 0.0
+Times 3: 44.035267100669444
+Times 4: 0.0
+Sub times 0: 426.0756968422793
+Sub times 1: 577.9136425405741
+Sub times 2: 410.68489251378924
+TOTAL: 1730.51341792522
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 33.4861462591216
+Times 1: 106.63101963978261
+Times 2: 0.0
+Times 3: 9.750414858106524
+Times 4: 0.0
+Sub times 0: 133.00172649137676
+Sub times 1: 248.4260547165759
+Sub times 2: 158.45890813553706
+TOTAL: 675.462210228201
+
+***********************************************************************
+Idem with an ArrayList
+***********************************************************************
+
+Times 0: 64.22501214686781
+Times 1: 223.06106374273077
+Times 2: 0.0
+Times 3: 34.27479508705437
+Times 4: 0.0
+Sub times 0: 423.03508274722844
+Sub times 1: 506.46842890046537
+Sub times 2: 269.738011025358
+TOTAL: 1468.0257798489183
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 32.456125646363944
+Times 1: 111.9981897030957
+Times 2: 0.0
+Times 3: 11.136626497842371
+Times 4: 0.0
+Sub times 0: 129.909988429863
+Sub times 1: 246.8043379993178
+Sub times 2: 112.92512447433546
+TOTAL: 621.9153857757337
+
+***********************************************************************
+Back to original
+***********************************************************************
+
+Times 0: 69.90814463607967
+Times 1: 254.54583550523967
+Times 2: 0.0
+Times 3: 37.63220972614363
+Times 4: 0.0
+Sub times 0: 365.70341437635943
+Sub times 1: 546.3903183434159
+Sub times 2: 208.62736553046852
+TOTAL: 1392.161283293739
+
+Player moved: GameCommand -> Move -> PileUpMove from H5 to G4.
+Player moved: GameCommand -> Move -> PileUpMove from A8 to C6.
+
+Times 0: 35.72386397048831
+Times 1: 111.28999813180417
+Times 2: 0.0
+Times 3: 14.359107596799731
+Times 4: 0.0
+Sub times 0: 139.5145744914189
+Sub times 1: 262.4256189344451
+Sub times 2: 110.08481534430757
+TOTAL: 642.2073786016554
+
+***********************************************************************
+***********************************************************************
+FINAL WORD
+
+Modifying the algo and some hot spot functions didn't changed a lot the speed but made the code ugly. The only thing that changed was using AlphaBeta cut. Immutable elements gave a lot of speed improvements (not visible here because I didn't made benchmarks).
+
+Possibility to make AI faster:
+1. Find some sortcuts specific to the game rules (really hard).
+2. Create an opening movements books with all the possible first moves and AI precalculated evaluations (easy but a bit long).

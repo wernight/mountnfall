@@ -1,0 +1,31 @@
+Mount'n Fall
+
+Version 1.01-2 (Windows EXE only)
+
+  Changes:
+   o Added icon to the EXE file.
+   o Use the new version of JSmooth
+ 
+
+Version 1.01
+
+  Changes:
+   o Counters' look
+
+  Bug fixed:
+   o Rendering sprites of 0 pixels size freeze the game on some Java versions.
+ 
+
+Version 1.00
+
+  Final release.
+
+
+Version 0.90
+
+  Beta preview release.
+
+
+Version 0.80
+
+  Alpha preview release.

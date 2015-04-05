@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Board-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="49" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="6" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="10" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="4.900" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.600" level="0" />
+<weighted_methods_per_class_unity value="7" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="7" level="0" />
+<IF4 value="100" level="0" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="100" level="1" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="MountnFall\Board.java" line="4" />
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Board()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\Board.java" line="106" />
+</extent>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>clear()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\Board.java" line="142" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>clone()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\Board.java" line="149" />
+</extent>
+<lines_of_code value="16" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>columns()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\Board.java" line="123" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getCounter(Square)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\Board.java" line="129" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>rows()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\Board.java" line="117" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setCounter(Square,Counter)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\Board.java" line="135" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Board</name>
+<client_module>
+<name>BoardRenderer</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\BoardRenderer.java" line="6" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\BoardRenderer.java" line="96" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\BoardRenderer.java" line="133" />
+</extent>
+<name>GameLogic</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>return type</description>
+<source_reference file="MountnFall\GameLogic.java" line="117" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\GameLogic.java" line="441" />
+</extent>
+</client_module>
+<supplier_module>
+<name>Cloneable</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>implements</description>
+<source_reference file="MountnFall\Board.java" line="4" />
+</extent>
+<name>Counter</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>return type</description>
+<source_reference file="MountnFall\Board.java" line="129" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\Board.java" line="135" />
+</extent>
+<name>Counter[][]</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\Board.java" line="169" />
+</extent>
+<name>Object</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>return type</description>
+<source_reference file="MountnFall\Board.java" line="149" />
+</extent>
+<name>Square</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\Board.java" line="129" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\Board.java" line="135" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

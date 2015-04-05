@@ -1,0 +1,20 @@
+Space Invaders 101: An Accelerated Java 2D Tutorial
+[ http://www.cokeandcode.com/info/tut2d.html ]
+
+Java2D: An Introduction Tutorial
+[ http://www.apl.jhu.edu/~hall/java/Java2D-Tutorial.html ]
+
+Java2D Transformations
+[ http://www.glyphic.com/transform/applet/1intro.html ]
+
+Java2D: Text
+[ http://www.glyphic.com/transform/applet/7wiggly.html ]
+
+Java2D Samples
+[ http://www.vorlesungen.uos.de/informatik/javaapi/Java2D/README.html ]
+
+Better compiler: jikes
+Opfuscator: JODE
+
+Java Code Optimization
+[ http://www.protomatter.com/nate/java-optimization/ ]

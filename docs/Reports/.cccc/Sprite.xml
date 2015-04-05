@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Sprite-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="48" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="27" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="1.778" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="6" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="8" level="0" />
+<IF4 value="144" level="1" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="144" level="2" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="13" />
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Sprite()</name>
+<extent>
+<description>definition</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="16" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Sprite(String)</name>
+<extent>
+<description>definition</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="21" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getHeight()</name>
+<extent>
+<description>definition</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="38" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getImage()</name>
+<extent>
+<description>definition</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="92" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getWidth()</name>
+<extent>
+<description>definition</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="30" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>load(String)</name>
+<extent>
+<description>definition</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="47" />
+</extent>
+<lines_of_code value="23" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="15" level="0" />
+<lines_of_code_per_line_of_comment value="1.533" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Sprite</name>
+<client_module>
+<name>Background</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\Background.java" line="12" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\Background.java" line="21" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\Background.java" line="81" />
+</extent>
+<name>BoardRenderer</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\BoardRenderer.java" line="134" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\BoardRenderer.java" line="147" />
+</extent>
+<name>GUI</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\GUI.java" line="166" />
+</extent>
+<name>InGameBackground</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\InGameBackground.java" line="9" />
+</extent>
+<name>Screen</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="GameMiddlewareLayer\Screen.java" line="49" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="GameMiddlewareLayer\Screen.java" line="62" />
+</extent>
+<name>Tower</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\Tower.java" line="18" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\Tower.java" line="18" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\Tower.java" line="18" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\Tower.java" line="82" />
+</extent>
+</client_module>
+<supplier_module>
+<name>Image</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>return type</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="92" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="98" />
+</extent>
+<name>String</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="21" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="GameMiddlewareLayer\Sprite.java" line="47" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

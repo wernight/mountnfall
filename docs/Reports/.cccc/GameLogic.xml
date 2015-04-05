@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module GameLogic-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="309" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="77" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="81" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="3.815" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.951" level="0" />
+<weighted_methods_per_class_unity value="20" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="10" level="0" />
+<IF4 value="256" level="1" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="256" level="2" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="8" />
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="6" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>GameLogic()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="11" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>attach(IGameObserver)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="77" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>canPlayerMove(int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="190" />
+</extent>
+<lines_of_code value="45" level="1" />
+<McCabes_cyclomatic_complexity value="16" level="1" />
+<lines_of_comment value="10" level="0" />
+<lines_of_code_per_line_of_comment value="4.500" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.600" level="0" />
+</member_function>
+<member_function>
+<name>clone()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="146" />
+</extent>
+<lines_of_code value="13" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>depileMove(Square,int,int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="405" />
+</extent>
+<lines_of_code value="20" level="0" />
+<McCabes_cyclomatic_complexity value="5" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="10.000" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="2.500" level="0" />
+</member_function>
+<member_function>
+<name>detach(IGameObserver)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="84" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>doMove(Move)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="268" />
+</extent>
+<lines_of_code value="17" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="6" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>execute(GameCommand)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="23" />
+</extent>
+<lines_of_code value="35" level="1" />
+<McCabes_cyclomatic_complexity value="7" level="0" />
+<lines_of_comment value="11" level="0" />
+<lines_of_code_per_line_of_comment value="3.182" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="0.636" level="0" />
+</member_function>
+<member_function>
+<name>getBoard()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="117" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getCurrentPlayerColour()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="102" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getWinner()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="107" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>isDepileMoveValid(Square,int,int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="368" />
+</extent>
+<lines_of_code value="26" level="0" />
+<McCabes_cyclomatic_complexity value="13" level="1" />
+<lines_of_comment value="6" level="0" />
+<lines_of_code_per_line_of_comment value="4.333" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="2.167" level="0" />
+</member_function>
+<member_function>
+<name>isGameOver()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="112" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>isMoveValid(Move)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="126" />
+</extent>
+<lines_of_code value="16" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="6" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>isPileUpMoveValid(Square,Square)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="291" />
+</extent>
+<lines_of_code value="29" level="0" />
+<McCabes_cyclomatic_complexity value="14" level="1" />
+<lines_of_comment value="8" level="0" />
+<lines_of_code_per_line_of_comment value="3.625" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.750" level="0" />
+</member_function>
+<member_function>
+<name>newGame()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="166" />
+</extent>
+<lines_of_code value="20" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="5.000" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>nextPlayer()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="430" />
+</extent>
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="5" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="5.000" level="0" />
+</member_function>
+<member_function>
+<name>notify(GameCommand)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="92" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="3" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>pileUpMove(Square,Square)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="333" />
+</extent>
+<lines_of_code value="24" level="0" />
+<McCabes_cyclomatic_complexity value="5" level="0" />
+<lines_of_comment value="5" level="0" />
+<lines_of_code_per_line_of_comment value="4.800" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.000" level="0" />
+</member_function>
+<member_function>
+<name>undoLastMove()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\GameLogic.java" line="249" />
+</extent>
+<lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>GameLogic</name>
+<client_module>
+<name>GUI</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GUI.java" line="11" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\GUI.java" line="162" />
+</extent>
+<name>InGame</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\InGame.java" line="245" />
+</extent>
+</client_module>
+<supplier_module>
+<name>ArrayList</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\GameLogic.java" line="450" />
+</extent>
+<name>Board</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>return type</description>
+<source_reference file="MountnFall\GameLogic.java" line="117" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\GameLogic.java" line="441" />
+</extent>
+<name>Cloneable</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>implements</description>
+<source_reference file="MountnFall\GameLogic.java" line="8" />
+</extent>
+<name>GameCommand</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="23" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="92" />
+</extent>
+<name>IGameObserver</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="77" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="84" />
+</extent>
+<name>Move</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="126" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="268" />
+</extent>
+<name>Object</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>return type</description>
+<source_reference file="MountnFall\GameLogic.java" line="146" />
+</extent>
+<name>Square</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="291" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="291" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="333" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="333" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="368" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\GameLogic.java" line="405" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

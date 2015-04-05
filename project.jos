@@ -1,0 +1,78 @@
+# usage:
+# java jode.obfuscator.Main project.jos
+
+# This is a sample script file to obfuscate my project
+
+# The class path should include everything that is needed to run the
+# project.  Don't forget the java base classes (rt.jar or classes.zip).
+#classpath = "c:\\jdk1.2\\jre\\lib\\rt.jar","d:\\project\\java"
+classpath = "C:\\Program Files\\Java\\j2sdk1.4.2_07\\jre\\lib\\lib\\rt.jar", "I:\\Wernight\\Documents\\Projets\\2005\\Mount'n Fall\\bin"
+
+# The jar, zip file or directory in which the obfuscated class files
+# should be written.
+dest = "bin/Mount'n Fall.jar"
+
+# Write the reverse translation table to translat.tbl.  With the help of
+# this table you can later undo the renaming.
+revtable = "translat.tbl"
+
+# unreach
+#     strip unreachable methods and classes.
+# source
+#     remove the name of the java file (exceptions will get unreadable).
+# lnt
+#     remove the line number table (exceptions will get unreadable).
+# lvt
+#     remove the local variable table (debugging doesn't work).
+# inner
+#     strip inner class info (reflection doesn't work correctly). 
+strip = "source","lnt","lvt","inner"
+
+# this variable will tell, which classes and packages should be included
+# in the obfuscated.jar package.
+
+## example ##
+# load = new WildCard { value = "org.myorg.myproject" },
+#        new WildCard { value = "org.myorg.mylib*" },
+#        new WildCard { value = "org.otherorg.shortlib" }
+load = new WildCard { value = "*" }
+
+## example ##
+# preserve = new WildCard { value = "org.myorg.ApplicationClass.main.*" },
+#            new WildCard { value = "org.myorg.AppletClass.<init>.()V" },
+#            new WildCard { value = "org.resources.BundleClass*.<init>.()V" },
+#            new MultiIdentifierMatcher {
+#                and = new WildCard { value = "org.myorg.publiclib.*" },
+# 	             new ModifierMatcher { access = "PUBLIC" }
+# 	   }
+preserve =	new WildCard { value = "MainFrame.main.*" },
+			new WildCard { value = "MainFrame.<init>.()V" },
+			new WildCard { value = "beroux.mountnfall.ScenesController.<init>.()V" },
+			new WildCard { value = "beroux.mountnfall.InGame.<init>.()V" },
+			new WildCard { value = "beroux.mountnfall.EndRound.<init>.()V" },
+			new WildCard { value = "beroux.mountnfall.Board$Square.*" },
+			new WildCard { value = "beroux.mountnfall.NewGame.*" },
+			new WildCard { value = "beroux.mountnfall.PileUpMove.*" },
+			new WildCard { value = "beroux.mountnfall.DepileMove.*" },
+			new WildCard { value = "beroux.mountnfall.GameOver.*" }
+
+# There are different renamers currently.  This is just an example that
+# produces very good obfuscated code, that is still valid bytecode.
+renamer = new StrongRenamer {
+  charsetStart = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ"
+  charsetPart = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789_$"
+  charsetPackage = "abcdefghijklmnopqrstuvwxyz"
+  charsetClass = "abcdefghijklmnopqrstuvwxyz"
+}
+
+# The constant analyzer does a great job to remove constant fields and
+# deadcode.  E.g. if you obfuscate the decompiler applet it will
+# remove the whole debugging code, since the applet doesn't need it.
+analyzer = new ConstantAnalyzer
+
+# The LocalOptimizer will reorder local variables to use fewer slots.
+# It may still have some bugs, so remove it if your applet doesn't
+# work (and send me the class).
+# The RemovePopAnalyzer will remove instructions that were optimized
+# away by the ConstantAnalyzer and LocalOptimizer.
+post = new LocalOptimizer, new RemovePopAnalyzer

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module State-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="19" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="5" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="5" level="0" />
+<IF4 value="36" level="0" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="36" level="1" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="MountnFall\ScenesController.java" line="144" />
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>State(SceneView)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\ScenesController.java" line="145" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>addTransition(Transition)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\ScenesController.java" line="161" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getTransition(int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\ScenesController.java" line="157" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getTransitionsCount()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\ScenesController.java" line="153" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getView()</name>
+<extent>
+<description>definition</description>
+<source_reference file="MountnFall\ScenesController.java" line="149" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>State</name>
+<client_module>
+<name>ScenesController</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\ScenesController.java" line="169" />
+</extent>
+<name>Transition</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\ScenesController.java" line="127" />
+</extent>
+<extent>
+<description>return type</description>
+<source_reference file="MountnFall\ScenesController.java" line="136" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\ScenesController.java" line="141" />
+</extent>
+</client_module>
+<supplier_module>
+<name>ArrayList</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\ScenesController.java" line="166" />
+</extent>
+<name>SceneView</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\ScenesController.java" line="145" />
+</extent>
+<extent>
+<description>return type</description>
+<source_reference file="MountnFall\ScenesController.java" line="149" />
+</extent>
+<extent>
+<description>member variable</description>
+<source_reference file="MountnFall\ScenesController.java" line="165" />
+</extent>
+<name>Transition</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>return type</description>
+<source_reference file="MountnFall\ScenesController.java" line="157" />
+</extent>
+<extent>
+<description>normal parameter</description>
+<source_reference file="MountnFall\ScenesController.java" line="161" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>
